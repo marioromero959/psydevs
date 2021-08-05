@@ -76,22 +76,6 @@
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
-
-
-    // Testimonials carousel
-    $(".testimonials-carousel").owlCarousel({
-        center: true,
-        autoplay: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{
-                items:1
-            }
-        }
-    });
-    
-    
     
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({

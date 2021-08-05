@@ -644,7 +644,7 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
-    padding: 0 0 15px 0;
+    /* padding: 0 0 150px 0; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -1059,8 +1059,10 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
+    background: url(../img/flecha.jpg) left center no-repeat;
+    background-size:700px 80%;
+    background-position: initial;
+    background-attachment: fixed;
 }
 
 .contact .contact-form {
