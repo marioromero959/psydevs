@@ -227,6 +227,9 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #1D2769;
+        font-size: 25px;
+        position: relative;
+        top: 20px;
     }
     
     .navbar .navbar-nav {
@@ -239,6 +242,10 @@ a:focus {
     
     .navbar .dropdown-menu {
         box-shadow: none;
+    }
+    .navbar-toggler{
+        position: relative;
+        left: 80%;
     }
 }
 
