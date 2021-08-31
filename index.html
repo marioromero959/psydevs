@@ -37,13 +37,9 @@
                     <div class="navbar-nav ml-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
                         <a href="#about" class="nav-item nav-link">Nosotros</a>
-                        <a href="#service" class="nav-item nav-link">Servicios</a>
-                        <a href="#portfolio" class="nav-item nav-link">Nuestro trabajo</a>
+                        <a href="#service" class="nav-item nav-link">Nuestro Trabajo</a>
+                        <a href="#portfolio" class="nav-item nav-link">Servicios</a>
                         <a href="#blog" class="nav-item nav-link">Casos de exito</a>
-                        <!-- <a href="#price" class="nav-item nav-link">Precios</a> -->
-                        <!-- <a href="#review" class="nav-item nav-link">Review</a> -->
-                        <!-- <a href="#team" class="nav-item nav-link">Equipo</a> -->
-                        <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
                         <a href="#contact" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
@@ -80,7 +76,18 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/img1.jpg" alt="Image">
+                            <!-- <img src="img/img1.jpg" alt="Image"> -->
+                            <div class="container">
+                                <div class="mision">
+                                    <h3>Misión</h3>
+                                    <p>Ser un espacio de trabajo lider en desarrollo web, construido a partir de 4 pilares fundamentales: conocimiento, compromiso, credibilidad e involucraamiento.</p>
+                                </div>
+                                <div class="vision">
+                                    <h3>Visión</h3>
+                                    <p>Colaborar en el desarrollo del potencial humano, generar acciones de calidad y lograr conexiones con el objetivo de promover el trabajo y el crecimiento sostenible en el tiempo.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -107,7 +114,7 @@
                                     <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                                 <div class="skill-name">
-                                    <p>Comunity Manager</p><p>100%</p>
+                                    <p>Consultoría</p><p>100%</p>
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -126,7 +133,7 @@
         <div class="service" id="service">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Nuestros Servicios</p>
+                    <p>Nuestro Trabajo</p>
                     <h2>Que hacemos</h2>
                 </div>
                 <div class="row">
@@ -187,53 +194,86 @@
         </div>
         <!-- Service End -->
 
+<!-- Start Modales -->
+<!-- Modal para paginas web -->
+    <div>
+            <div id="tvesModal" class="modalContainer">
+            <div class="modal-content">
+            <h2>Páginas Web</h2>
+            <p>Diseñamos tu página web a la medida de tus necesidades.</p> </div>
+            </div> 
+    </div>
+<!-- Modal para Lead Generation -->
+    <div>
+            <div id="tvesModal2" class="modalContainer">
+            <div class="modal-content">
+            <h2>Lead Generation</h2>
+            <p>Generamos opotunidades de venta de servicios a través de diferentes técnicas.</p> </div>
+            </div> 
+    </div>
+    <!-- Modal para Consultoria -->
+    <div>
+            <div id="tvesModal3" class="modalContainer">
+            <div class="modal-content">
+            <h2>Consultoría</h2>
+            <p>Asesoramos a personas, empresas u organizaciones en general, analizando los recursos y acciones disponibles de la forma mas eficiente.</p> </div>
+            </div> 
+    </div>
+
+<!-- End Modales -->
+
         <!-- Portfolio Start -->
         <div class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <h2>Que Ofrecemos</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Desarrollo Web</li>
-                            <li data-filter=".filter-2">Lead generation</li>
-                            <li data-filter=".filter-3">Consultoría</li>
-                        </ul>
-                    </div>
+                    <h2>Servicios</h2>
                 </div>
                 <div class="row portfolio-container">
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                         <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/paginas-web.jpg" alt="Image">
-                            </div>
                             <div class="portfolio-text">
                                 <h3>Páginas Web</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
+                                <button onclick="imprimir()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="img/paginas-web.jpg" alt="Image">
+                                <div class="portafolio">
+                                    <p>Diseñamos tu página web a la medida de tus necesidades.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/lead.jpg" alt="Image">
-                            </div>
                             <div class="portfolio-text">
                                 <h3>Lead Generation</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
+                                <button onclick="lead()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="img/lead.jpg" alt="Image">
+                                <div class="portafolio">
+                                    <p>Generamos opotunidades de venta de servicios a través de diferentes técnicas.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/consult.jpg" alt="Image">
-                            </div>
                             <div class="portfolio-text">
                                 <h3>Consultoría</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
+                                <button onclick="consultoria()">
+                                    +
+                                </button>
+                            </div>
+                            <div class="portfolio-img">
+                                <img src="img/consult.jpg" alt="Image">
+                                <div class="portafolio">
+                                    <p>Asesoramos a personas, empresas u organizaciones en general, analizando los recursos y acciones disponibles de la forma mas eficiente.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,8 +299,6 @@
                                 <h2>Marina Ferreira</h2>
                                 <h4>Proyect Manager</h4>
                                 <div class="team-social">
-                                 <!--    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a> -->
                                     <a class="btn" href="https://www.instagram.com/mar.ferreirac/"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -276,7 +314,6 @@
                                 <h2>Alex Sanz</h2>
                                 <h4>Desarrollador Web</h4>
                                 <div class="team-social">
-                         <!--            <a class="btn" href=""><i class="fab fa-twitter"></i></a>
                                     <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a> -->
                                     <a class="btn" href="https://www.instagram.com/alexndrsanz/"><i class="fab fa-instagram"></i></a>
@@ -287,13 +324,12 @@
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
                         <div class="team-item">
                             <div class="team-img">
-                                <img src="img/euge.png" alt="Image">
+                                <img src="img/eugenia.png" alt="Image">
                             </div>
                             <div class="team-text">
                                 <h2>Eugenia Castro</h2>
                                 <h4>Lead Generation</h4>
                                 <div class="team-social">
-                                   <!--  <a class="btn" href=""><i class="fab fa-twitter"></i></a> -->
                                     <a class="btn" href="https://www.facebook.com/eugenia.castro.75470316/"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href="https://www.linkedin.com/mwlite/in/eugenia-castro-ab0b68b5"><i class="fab fa-linkedin-in"></i></a>
                                     <a class="btn" href="https://www.instagram.com/_eugeniacastro/"><i class="fab fa-instagram"></i></a>
@@ -384,6 +420,10 @@
                                         <p class="help-block"></p>
                                     </div>
                                     <div class="control-group">
+                                        <input type="number" class="form-control" id="number" placeholder="Teléfono" required="required" data-validation-required-message="Por favor ingresa tu teléfono/celular" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
                                         <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Escribe tu mensaje"></textarea>
                                         <p class="help-block"></p>
                                     </div>
@@ -448,5 +488,7 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <!-- Modal service -->
+        <script src="js/modal.js"></script>
     </body>
 </html>

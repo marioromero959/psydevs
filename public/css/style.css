@@ -227,6 +227,9 @@ a:focus {
     
     .navbar .navbar-brand {
         color: #1D2769;
+        font-size: 25px;
+        position: relative;
+        top: 20px;
     }
     
     .navbar .navbar-nav {
@@ -239,6 +242,10 @@ a:focus {
     
     .navbar .dropdown-menu {
         box-shadow: none;
+    }
+    .navbar-toggler{
+        position: relative;
+        left: 80%;
     }
 }
 
@@ -685,7 +692,35 @@ a:focus {
 
 .portfolio .portfolio-item {
     position: relative;
+    transition: .5s;
 }
+/* .portfolio .portfolio-item:hover {
+    background-color: rgba(0, 0, 0, .3);
+} */
+
+.portafolio{
+    display:flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(0,0,0, 0.6);
+    opacity: 0;
+    transition: .5s;
+}
+.portafolio p{
+    text-align: center;
+    font-size: 19px;
+    padding: 15px;
+    color: #fff;
+}
+
+.portfolio-wrap:hover .portafolio{
+    opacity: 1;
+}
+
 
 .portfolio .portfolio-wrap {
     position: relative;
@@ -706,9 +741,7 @@ a:focus {
     transition: .5s;
 }
 
-.portfolio .portfolio-item:hover img {
-    margin-left: 15px;
-}
+
 
 .portfolio .portfolio-text {
     position: relative;
