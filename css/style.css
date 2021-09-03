@@ -663,7 +663,16 @@ a:focus {
     border-top: 10px solid #1D2769;
     width: 60%;
 }
-
+.modal-content p{
+    font-size: 20px;
+    color: #1D2769;
+}
+.modal-content ul{
+    list-style-type:'✓';
+}
+/* ul {
+  list-style-image: url(images/bullet.png);
+} */
 .portfolio button {
     background-color: #1D2769;
     border: none;

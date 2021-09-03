@@ -40,10 +40,6 @@
                         <a href="#service" class="nav-item nav-link">Nuestro Trabajo</a>
                         <a href="#portfolio" class="nav-item nav-link">Servicios</a>
                         <a href="#blog" class="nav-item nav-link">Casos de exito</a>
-                        <!-- <a href="#price" class="nav-item nav-link">Precios</a> -->
-                        <!-- <a href="#review" class="nav-item nav-link">Review</a> -->
-                        <!-- <a href="#team" class="nav-item nav-link">Equipo</a> -->
-                        <!-- <a href="#blog" class="nav-item nav-link">Blog</a> -->
                         <a href="#contact" class="nav-item nav-link">Contacto</a>
                     </div>
                 </div>
@@ -80,7 +76,18 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img">
-                            <img src="img/img1.jpg" alt="Image">
+                            <!-- <img src="img/img1.jpg" alt="Image"> -->
+                            <div class="container">
+                                <div class="mision">
+                                    <h3>Misión</h3>
+                                    <p>Ser un espacio de trabajo lider en desarrollo web, construido a partir de 4 pilares fundamentales: conocimiento, compromiso, credibilidad e involucraamiento.</p>
+                                </div>
+                                <div class="vision">
+                                    <h3>Visión</h3>
+                                    <p>Colaborar en el desarrollo del potencial humano, generar acciones de calidad y lograr conexiones con el objetivo de promover el trabajo y el crecimiento sostenible en el tiempo.</p>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -187,27 +194,79 @@
         </div>
         <!-- Service End -->
 
+<!-- Start Modales -->
+<!-- Modal para paginas web -->
+    <div>
+        <div id="tvesModal" class="modalContainer">
+        <div class="modal-content">
+            <h2>Páginas Web</h2>
+            <p>Diseñamos tu página web a la medida de tus necesidades.</p>
+            <ul>
+                <li>Permiten presentar tu trabajo y tus servicios.</li>
+                <li>El objetivo principal es mantener una marcada presencia en los buscadores. Asi tus potenciales pacientes podran conocerte y contactarte.</li>
+                <li>Desarrollamos sitios web desde cero, con diseños unicos.</li>
+                <li>Tambien utilizamos wordpress, un software de codigo abierto con diseños personalizables, adaptable a cualquier dispositivo, facil, accesible y de alta seguridad.</li>
+            </ul>    
+        </div>
+        </div> 
+    </div>
+<!-- Modal para Lead Generation -->
+    <div>
+        <div id="tvesModal2" class="modalContainer">
+        <div class="modal-content">
+            <h2>Lead Generation</h2>
+            <p>Generamos opotunidades de venta de servicios a través de diferentes técnicas.</p>
+            <ul>
+                <li>Tu mensaje llega al cliente que buscas</li>
+                <li>Comunicacion personalizada a traves de correos electronicos: novedades, actividades o formaciones, entre otras.</li>
+                <li>Nuestro servicio de diseño y envio de correos incluye:</li>
+                <li>Diseño y generacion de contenido.</li>
+                <li>Programacion para la correcta recepcion del correo.</li>
+                <li>Envio a traves de plataformas de envios masivos de emails</li>
+                <li>Suscripcion al Newsletter desde el sitio web.</li>
+                <li>Analisis de resultados, estudiando cada detalle y tipo de conversion</li>
+            </ul>
+        </div>
+        </div> 
+    </div>
+    <!-- Modal para Consultoria -->
+    <div>
+        <div id="tvesModal3" class="modalContainer">
+        <div class="modal-content">
+            <h2>Consultoría</h2>
+            <p>¿Cual es la ventaja de contratar una asesoria de marketing?</p>
+            <ul>
+                <li>La razon numero uno es la perspectiva externa, un asesor puede ver las cosas con claridad sin verse afectado por los problemas internos</li>
+                <li>Los consultores tienen una formacion general y mayor conocimiento de como manejar distintas necesidades ...pero con habilidades especificas que te permiten ahorrar tiempo, dinero y recursos</li>
+                <li>Permite ahorrar tiempo, abordar los problemas mucho mas rapido y evitar que estos se maximicen</li>
+            </ul>
+            <p>¿Que esperar de una consultoria de marketing?</p>
+            <ul>
+                <li>Asesoramiento antes de iniciar una inversion en canales digitales</li>
+                <li>Ayuda al momento de definir tus audiencias y recomendarte los mejores canales para conectar con ellas</li>
+                <li>Ayuda al momento de vender con un bajo costo en relacion a la inversion de marketing</li>
+                <li>Visualización de las oportunidades que tiene el negocio en materia de keywords</li>
+            </ul>
+        </div>
+        </div> 
+    </div>
+
+<!-- End Modales -->
+
         <!-- Portfolio Start -->
         <div class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
                     <h2>Servicios</h2>
                 </div>
-              <!--   <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Desarrollo Web</li>
-                            <li data-filter=".filter-2">Lead generation</li>
-                            <li data-filter=".filter-3">Consultoría</li>
-                        </ul>
-                    </div>
-                </div> -->
                 <div class="row portfolio-container">
                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
                         <div class="portfolio-wrap">
                             <div class="portfolio-text">
                                 <h3>Páginas Web</h3>
+                                <button onclick="imprimir()">
+                                    +
+                                </button>
                             </div>
                             <div class="portfolio-img">
                                 <img src="img/paginas-web.jpg" alt="Image">
@@ -221,6 +280,9 @@
                         <div class="portfolio-wrap">
                             <div class="portfolio-text">
                                 <h3>Lead Generation</h3>
+                                <button onclick="lead()">
+                                    +
+                                </button>
                             </div>
                             <div class="portfolio-img">
                                 <img src="img/lead.jpg" alt="Image">
@@ -234,6 +296,9 @@
                         <div class="portfolio-wrap">
                             <div class="portfolio-text">
                                 <h3>Consultoría</h3>
+                                <button onclick="consultoria()">
+                                    +
+                                </button>
                             </div>
                             <div class="portfolio-img">
                                 <img src="img/consult.jpg" alt="Image">
@@ -265,8 +330,6 @@
                                 <h2>Marina Ferreira</h2>
                                 <h4>Proyect Manager</h4>
                                 <div class="team-social">
-                                 <!--    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a> -->
                                     <a class="btn" href="https://www.instagram.com/mar.ferreirac/"><i class="fab fa-instagram"></i></a>
                                 </div>
@@ -282,7 +345,6 @@
                                 <h2>Alex Sanz</h2>
                                 <h4>Desarrollador Web</h4>
                                 <div class="team-social">
-                         <!--            <a class="btn" href=""><i class="fab fa-twitter"></i></a>
                                     <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a> -->
                                     <a class="btn" href="https://www.instagram.com/alexndrsanz/"><i class="fab fa-instagram"></i></a>
@@ -299,7 +361,6 @@
                                 <h2>Eugenia Castro</h2>
                                 <h4>Lead Generation</h4>
                                 <div class="team-social">
-                                <!--  <a class="btn" href=""><i class="fab fa-twitter"></i></a> -->
                                     <a class="btn" href="https://www.facebook.com/eugenia.castro.75470316/"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn" href="https://www.linkedin.com/mwlite/in/eugenia-castro-ab0b68b5"><i class="fab fa-linkedin-in"></i></a>
                                     <a class="btn" href="https://www.instagram.com/_eugeniacastro/"><i class="fab fa-instagram"></i></a>
@@ -458,5 +519,7 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <!-- Modal service -->
+        <script src="js/modal.js"></script>
     </body>
 </html>
